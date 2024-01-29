@@ -1,0 +1,444 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(109, 85, 85, 0.404);
+}
+
+header, section, footer {
+    color:chocolate;
+    padding: 20px;
+    
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 10px;
+    padding: 0px;
+    position: fixed;
+    top: 0;
+    padding: 10px;
+    width: 10%;
+    top: 0;
+    z-index: 1000;
+
+
+}
+
+.nav_container{
+    width: 90%;
+    padding: 10px;
+}
+
+.h_container{
+    width:30%;
+    padding: 10px;
+   
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    
+}
+
+section {
+    margin-top: 20px;
+}
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.main {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    
+}
+
+.container {
+border: 1px solid white;
+width: 80%;
+padding: 5px;
+border:1px solid  #3498db; 
+background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); 
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: gray; 
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  margin-top: 5px;
+
+
+}
+
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  }
+
+
+.heading{
+    border-radius: 0px;
+    background-color: azure;
+    border-bottom: 1px solid gray;
+    color: blue;
+    margin-bottom: 10px;
+    border: 0px;
+    
+
+
+}
+
+.heading h1{
+    text-align: right;
+    width: 100%;
+}
+
+
+
+.skill-box {
+    width: 30%;
+    height: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black; 
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    margin: 10px;
+    background-color: rgb(127, 160, 204);
+    
+  }
+
+  .cskills{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+
+  .readMoreButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid #3498db;
+    color: #3498db;
+    background-color: #fff; 
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }
+
+  
+  .readMoreButton:hover {
+    background-color: #3498db; 
+    color: #fff; 
+    border-color: #3498db; 
+  }
+
+
+
+  nav {
+    background-color: #3498db;
+    padding: 10px;
+    
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+
+
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 60%;
+    
+  }
+
+  .navbar-list li {
+    margin-right: 20px;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+
+  .navbar-link:hover {
+    color: #ecf0f1;
+  }
+
+  
+  
+@media only screen and (max-width: 800px) {
+    .container {
+      display: flex;
+      flex-direction: row; 
+      flex-wrap: wrap;
+      height: auto;
+    }
+  
+    .skill-box {
+      width: 90%; 
+      margin: 10px; 
+      height: auto;
+      background-color: rgb(127, 160, 204);
+    }
+
+    .cskills{
+        flex-direction: row;
+        height: auto;
+        
+      }
+      .navbar-list {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+  
+      .navbar-list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+  }
+
+
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 1.5rem;
+    padding-top: 10rem !important;
+    
+  }
+  
+  /* 27. Styling for the h3 element within the contact content */
+  .contact-content > h3 {
+    color: rgb(0, 110, 255);
+    font-size: 4rem;
+    
+  }
+  
+  /* 28. Styling for the contact description section */
+  .contact-desc {
+    width: 50%;
+    margin: auto;
+  }
+  
+  /* 29. Styling for the h3 element within the contact description */
+  .contact-desc > h1 {
+    color: rgb(0, 110, 255);
+    margin-bottom: 1rem;
+    font-size: 4rem;
+   
+  }
+  
+  
+  .contact-desc > p {
+    margin-bottom: 1rem;
+    font-size: 20px;
+  }
+  
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 0;
+    width: 100%;
+    
+  }
+  
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+    
+  }
+  form input,
+  form textarea{
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 0 15px 4px rgb(102, 125, 228);
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: rgb(0, 110, 255);
+
+  }
+  
+  .home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding: 1.5rem;
+
+   
+  }
+  
+  
+  .home-content > img {
+    width: 20%;
+    height: 150px;
+    max-width: 530px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: rgb(0, 110, 255);
+    box-shadow: 0 0 20px rgb(0, 110, 255);
+    border: 7px transparent;
+
+  }
+  
+  
+  .home-desc {
+    width: 50%;
+  }
+  
+  
+  .home-desc > h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: rgb(0, 110, 255);
+  }
+  
+  
+  .home-desc > p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5rem;
+  }
+  
+  
+
+
+  .contact-desc > form > button {
+    padding: 0.7rem 2rem;
+    font-weight: bold;
+    background-color: transparent;
+    border: 1px solid rgb(0, 110, 255);
+    border-radius: 6px;
+    color: rgb(0, 110, 255);
+    cursor: pointer;
+  }
+  
+  /* 34. Styling for the button on hover within the contact form */
+  .contact-desc > form > button:hover {
+    background-color: rgb(0, 110, 255);
+    border: 1px solid rgb(0, 110, 255);
+    color: white;
+  }
+
+
+  .h_container {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+
+  .h_container h1 {
+    margin: 0;
+  }
+
+  .nav_container {
+    display: flex;
+    align-items: center;
+  }
+  .f_container {
+    text-align: center;
+  }
+
+  nav {
+    margin-left: auto;
+  }
+
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    width: 100px;
+  }
+
+  .navbar-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 20px;
+    position: relative;
+    cursor: pointer;
+    
+  }
+
+  .dropdown-content {
+   
+    display: none;
+    position: absolute;
+    background-color: gray;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .navbar-link:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content a {
+    color: #fff;
+    padding: 10px;
+    display: block;
+    width: 80px;
+    text-decoration: none;
+  }
+  
